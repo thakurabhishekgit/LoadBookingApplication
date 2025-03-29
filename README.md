@@ -93,7 +93,7 @@ Develop a backend system using **Spring Boot** and **PostgreSQL** to manage **Lo
 ## 🛠️ **Setup & Installation**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/thakurabhishekgit/loadbooking.git
+git clone https://github.com/thakurabhishekgit/LoadBookingApplication/tree/master
 cd loadbooking
 ```
 ### **2️⃣ Configure Database**
