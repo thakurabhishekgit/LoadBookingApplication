@@ -4,7 +4,7 @@ import com.example.loadbooking.entity.Load;
 import com.example.loadbooking.service.LoadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+//LoadController 
 import java.util.List;
 import java.util.UUID;
 
