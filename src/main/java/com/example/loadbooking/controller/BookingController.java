@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 //bookings Controller 
 @RestController
-@RequestMapping("/api/bookings")
+@RequestMapping("booking")
 public class BookingController {
 
     private final BookingService bookingService;
@@ -19,28 +19,28 @@ public class BookingController {
     }
 
     // Create a new booking
-    @PostMapping("/createBooking")
+    @PostMapping
     public ResponseEntity<Booking> createBooking(@RequestBody Booking booking) {
         Booking createdBooking = bookingService.createBooking(booking);
         return ResponseEntity.status(201).body(createdBooking);
     }
 
     // Get all bookings
-    @GetMapping("/getAllBookings")
+    @GetMapping
     public ResponseEntity<List<Booking>> getAllBookings() {
         List<Booking> bookings = bookingService.getAllBookings();
         return ResponseEntity.ok(bookings);
     }
 
     // Get booking by ID
-    @GetMapping("/getBookingById/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Booking> getBookingById(@PathVariable UUID id) {
         Booking booking = bookingService.getBookingById(id);
         return ResponseEntity.ok(booking);
     }
 
     // Delete booking
-    @DeleteMapping("/deleteBookingById/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBooking(@PathVariable UUID id) {
         bookingService.deleteBooking(id);
         return ResponseEntity.noContent().build();
