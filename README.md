@@ -127,6 +127,7 @@ loadbooking/
 │   │   │   ├── service/     # Business logic
 │   │   │   ├── repository/  # Data access layer
 │   │   │   ├── LoadbookingApplication.java # Main entry point
+|   |   |   |---Exceptions #handles the exceptions of apis
 │   ├── resources/
 │   │   ├── application.properties  # App configuration
 │── pom.xml  # Maven dependencies
