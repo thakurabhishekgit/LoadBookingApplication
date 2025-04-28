@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("load")
+@RequestMapping("load")//
 public class LoadController {
 
     private final LoadService loadService;
